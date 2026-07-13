@@ -77,17 +77,17 @@ env:
 secretEnabled: true
 secrets:
 
-  - name: "DB_PASSWORD"
-    valueFrom:
-      secretKeyRef:
-        name: "careempay-test-secrets"
-        key: "DB_PASSWORD"
-
   - name: "API_KEY"
     valueFrom:
       secretKeyRef:
         name: "careempay-test-secrets"
         key: "API_KEY"
+
+  - name: "DB_PASSWORD"
+    valueFrom:
+      secretKeyRef:
+        name: "careempay-test-secrets"
+        key: "DB_PASSWORD"
 
 
 
